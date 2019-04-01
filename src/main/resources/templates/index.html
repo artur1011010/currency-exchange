@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>currency exchange</title>
+    <th:block th:include="fragments/imports :: head"></th:block>
+</head>
+<body>
+<div class="container-fluid no-gutters">
+    <div class="row justify-content-center">
+        <div class="col-8">
+            <h1 class="welcome">CURRENCY EXCHANGE PROJECT</h1>
+        </div>
+        <aside class="col-4">
+            <h1>currency exchange</h1>
+            <p>
+                Simple project that collects the current currency exchange rate from the NBP website and enables
+                conversion of currencies at the average exchange rate. <span class="author_name">Design and implementation Artur Zaczek.</span></p>
+        </aside>
+    </div>
+    <div class="row no-gutters fixed-bottom">
+        <div onclick="location.href='/exchange'" class="col-6 col-md-4 panel">
+            <p>current exchange rate</p>
+        </div>
+        <div onclick="location.href='/info'" class="col-6 col-md-4 panel">
+            <p>information about currencies</p>
+        </div>
+        <div onclick="location.href='/table'" class="col-6 col-md-4 panel">
+            <p>table</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

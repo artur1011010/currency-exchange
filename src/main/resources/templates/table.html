@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>tables</title>
+    <th:block th:include="fragments/imports :: head"></th:block>
+
+</head>
+<body>
+<div class="container-fluid no-gutters">
+    <div class="row justify-content-center custom_row">
+        <div class="col-8">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Code</th>
+                    <th scope="col">Rate</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="c : ${table}">
+                    <td th:text="${c.getCurrency()}">name</td>
+                    <td th:text="${c.getCode()}">code</td>
+                    <td th:text="${c.getMid()}">rate</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row no-gutters fixed-bottom">
+            <div onclick="location.href='/exchange'" class="col-6 col-md-4 panel">
+                <p>current exchange rate</p>
+            </div>
+            <div onclick="location.href='/info'" class="col-6 col-md-4 panel">
+                <p>information about currencies</p>
+            </div>
+            <div onclick="location.href='/'" class="col-6 col-md-4 panel">
+                <p>home</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>exchange</title>
+    <th:block th:include="fragments/imports :: head"></th:block>
+
+</head>
+<body>
+<div class="container-fluid no-gutters">
+    <div class="row justify-content-center">
+        <div class="col-8">
+            <form id="custom_form" class="form-inline" th:method="post" th:action="@{/get-rate} + ${ex}">
+                <label class="my-1 mr-2" for="ex">Choose currency</label>
+                <select class="custom-select my-1 mr-sm-2" id="ex">
+                    <option th:each="ex : ${currencyList}" th:value="${ex}" th:text="${ex}">One</option>
+                </select>
+                <label for="amount">amount in PLN (1-100)</label>
+                <input class="form-control ml-1" type="number" id="amount"
+                       min="1" max="100">
+                <button type="submit" class="btn btn-secondary ml-2">Submit</button>
+            </form>
+<!--            <h2 th:text="${result}">result</h2>-->
+        </div>
+    </div>
+    <div class="row no-gutters fixed-bottom">
+        <div onclick="location.href='/'" class="col-6 col-md-4 panel">
+            <p>home</p>
+        </div>
+        <div onclick="location.href='/info'" class="col-6 col-md-4 panel">
+            <p>information about currencies</p>
+        </div>
+        <div onclick="location.href='/table'" class="col-6 col-md-4 panel">
+            <p>Table</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>currency info</title>
+    <th:block th:include="fragments/imports :: head"></th:block>
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="container-fluid">
+        <div class="row justify-content-center custom_row">
+            <div class="col-sm-10 col-md-8 col-lg-6">
+                <h2>wiki about currency</h2>
+                <p>A currency (from Middle English: curraunt, "in circulation", from Latin: currens, -entis), in the
+                    most specific use of the word, refers to money in any form when in use or circulation as a medium of
+                    exchange, especially circulating banknotes and coins. A more general definition is that a currency
+                    is a system of money (monetary units) in common use, especially for people in a nation. Under this
+                    definition, US dollars, pounds sterling, Australian dollars, European euros, Russian rubles and
+                    Indian Rupees are examples of currency. These various currencies are recognized as stores of value
+                    and are traded between nations in foreign exchange markets, which determine the relative values of
+                    the different currencies. Currencies in this sense are defined by governments, and each type has
+                    limited boundaries of acceptance.
+
+                    Other definitions of the term "currency" are discussed in their respective synonymous articles
+                    banknote, coin, and money. The latter definition, pertaining to the currency
+                    systems of nations, is the topic of this article. Currencies can be classified into two monetary
+                    systems: fiat money and commodity money, depending on what guarantees the currency's value (the
+                    economy at large vs. the government's physical metal reserves). Some currencies are legal tender in
+                    certain political jurisdictions. Others are simply traded for their economic value. Digital currency
+                    has arisen with the popularity of computers and the Internet.</p>
+                <a href="https://en.wikipedia.org/wiki/Currency" target="_blank">source wikipedia</a>
+            </div>
+        </div>
+        <div class="row no-gutters fixed-bottom">
+            <div onclick="location.href='/exchange'" class="col-6 col-md-4 panel">
+                <p>current exchange rate</p>
+            </div>
+            <div onclick="location.href='/home'" class="col-6 col-md-4 panel">
+                <p>home</p>
+            </div>
+            <div onclick="location.href='/table'" class="col-6 col-md-4 panel">
+                <p>table</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
