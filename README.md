@@ -1,6 +1,6 @@
 # Currency Exchange
 
-Page download JASON from the NBP API, allows you to convert currencies and view the table rates
+Page download JSON from NBP API, allows you to convert PLN to another currency and view the table
 
 project finished
 
