@@ -10,7 +10,8 @@
 <div class="container-fluid no-gutters">
     <div class="row justify-content-center custom_row">
         <div class="col-8">
-            <table class="table">
+            <h2 th:text="${date}">result</h2>
+            <table class="table mt-2">
                 <thead>
                 <tr>
                     <th scope="col">Name</th>
@@ -29,7 +30,7 @@
         </div>
         <div class="row no-gutters fixed-bottom">
             <div onclick="location.href='/exchange'" class="col-6 col-md-4 panel">
-                <p>current exchange rate</p>
+                <p>conversion</p>
             </div>
             <div onclick="location.href='/info'" class="col-6 col-md-4 panel">
                 <p>information about currencies</p>

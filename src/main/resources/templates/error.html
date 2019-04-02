@@ -5,18 +5,13 @@
     <title>currency exchange</title>
     <th:block th:include="fragments/imports :: head"></th:block>
 </head>
-<body>
+<body class="error_page">
 <div class="container-fluid no-gutters">
     <div class="row justify-content-center">
         <div class="col-8">
-            <h1 class="welcome">CURRENCY EXCHANGE PROJECT</h1>
+            <h1 class="error_header">Oops!</h1>
+            <h1>Something went wrong here.</h1>
         </div>
-        <aside class="col-4">
-            <h1>currency exchange</h1>
-            <p>
-                Simple project that collects the current exchange rate from the NBP website and enables
-                conversion at the average exchange rate. <span class="author_name" onclick="location.href='https://github.com/arturzaczek1'">Design and implementation Artur Zaczek.</span></p>
-        </aside>
     </div>
     <div class="row no-gutters fixed-bottom">
         <div onclick="location.href='/exchange'" class="col-6 col-md-4 panel">

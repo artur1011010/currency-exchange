@@ -11,14 +11,28 @@ body {
 .welcome {
     text-align: center;
     margin-top: 30vh;
+    color: #76323F;
 }
 
-.currency_info {
+.error_page {
     background-image: url('images/back.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+}
+.error_header{
+    padding-top: 30vh;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fcf6ff;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fcf6ff;
 }
 
 aside h1 {
@@ -53,7 +67,7 @@ h2{
     transition: 0.7s;
 }
 #custom_form{
-    margin-top: 35vh;
+    margin-top: 20vh;
 }
 .custom_row{
     margin-bottom: 30vh;

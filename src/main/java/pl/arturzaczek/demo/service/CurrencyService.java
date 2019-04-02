@@ -54,8 +54,14 @@ public class CurrencyService {
         StringBuilder sb = new StringBuilder();
         List<Currency> list = getCurrencyList();
         Currency currency = list.stream().filter(a -> a.getCurrency().equals(name)).findFirst().get();
-        Float floatResult = currency.getMid()* Integer.parseInt(amount);
+        Float floatResult = Float.parseFloat(amount) / currency.getMid();
         sb.append(floatResult).append(" ").append(currency.getCode());
         return sb.toString();
+    }
+
+    public String getTableDate (){
+        Table[] table = getCurrencyTable();
+        String result = "Table date: "  + table[0].getEffectiveDate();
+        return result;
     }
 }
