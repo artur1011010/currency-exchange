@@ -2,6 +2,8 @@
 
 Page download JASON from the NBP API, allows you to convert currencies and view the table rates
 
+project finished
+
 ## Demo
 
 [HEROKU demo](https://currency100.herokuapp.com/)
@@ -11,3 +13,5 @@ Page download JASON from the NBP API, allows you to convert currencies and view 
 ![img](https://i.ibb.co/tpqKTmJ/screen.jpg)
 
 ![img](https://i.ibb.co/DGZRfy5/screen2.jpg)
+
+![img](https://i.ibb.co/yqSGJPK/error-page.jpg)
